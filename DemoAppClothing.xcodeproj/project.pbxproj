@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1869570A264AA6ED0059763A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695709264AA6ED0059763A /* AppDelegate.swift */; };
 		1869570C264AA6ED0059763A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869570B264AA6ED0059763A /* SceneDelegate.swift */; };
-		1869570E264AA6ED0059763A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869570D264AA6ED0059763A /* ViewController.swift */; };
-		18695711264AA6ED0059763A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1869570F264AA6ED0059763A /* Main.storyboard */; };
 		18695713264AA6EE0059763A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18695712264AA6EE0059763A /* Assets.xcassets */; };
 		18695716264AA6EE0059763A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18695714264AA6EE0059763A /* LaunchScreen.storyboard */; };
+		18695725264ABB820059763A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695721264ABB810059763A /* MainViewController.swift */; };
+		18695726264ABB820059763A /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18695722264ABB820059763A /* ImageCollectionViewCell.xib */; };
+		18695727264ABB820059763A /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695723264ABB820059763A /* ImageCollectionViewCell.swift */; };
+		18695728264ABB820059763A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18695724264ABB820059763A /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18695706264AA6ED0059763A /* DemoAppClothing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppClothing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18695709264AA6ED0059763A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1869570B264AA6ED0059763A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1869570D264AA6ED0059763A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18695710264AA6ED0059763A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18695712264AA6EE0059763A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18695715264AA6EE0059763A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18695717264AA6EE0059763A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18695721264ABB810059763A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		18695722264ABB820059763A /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		18695723264ABB820059763A /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		18695724264ABB820059763A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				18695709264AA6ED0059763A /* AppDelegate.swift */,
 				1869570B264AA6ED0059763A /* SceneDelegate.swift */,
-				1869570D264AA6ED0059763A /* ViewController.swift */,
-				1869570F264AA6ED0059763A /* Main.storyboard */,
 				18695712264AA6EE0059763A /* Assets.xcassets */,
 				18695714264AA6EE0059763A /* LaunchScreen.storyboard */,
 				18695717264AA6EE0059763A /* Info.plist */,
+				18695723264ABB820059763A /* ImageCollectionViewCell.swift */,
+				18695722264ABB820059763A /* ImageCollectionViewCell.xib */,
+				18695721264ABB810059763A /* MainViewController.swift */,
+				18695724264ABB820059763A /* MainViewController.xib */,
 			);
 			path = DemoAppClothing;
 			sourceTree = "<group>";
@@ -125,8 +131,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18695716264AA6EE0059763A /* LaunchScreen.storyboard in Resources */,
+				18695726264ABB820059763A /* ImageCollectionViewCell.xib in Resources */,
 				18695713264AA6EE0059763A /* Assets.xcassets in Resources */,
-				18695711264AA6ED0059763A /* Main.storyboard in Resources */,
+				18695728264ABB820059763A /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1869570E264AA6ED0059763A /* ViewController.swift in Sources */,
+				18695725264ABB820059763A /* MainViewController.swift in Sources */,
 				1869570A264AA6ED0059763A /* AppDelegate.swift in Sources */,
+				18695727264ABB820059763A /* ImageCollectionViewCell.swift in Sources */,
 				1869570C264AA6ED0059763A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +154,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1869570F264AA6ED0059763A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18695710264AA6ED0059763A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18695714264AA6EE0059763A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
