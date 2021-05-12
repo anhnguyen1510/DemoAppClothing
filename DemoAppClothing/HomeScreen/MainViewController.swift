@@ -16,6 +16,13 @@ class MainViewController: UIViewController {
                        UIImage(named: "slideHomeImage1"),
                        UIImage(named: "slideHomeImage2"),
                        UIImage(named: "slideHomeImage3")]
+    var productImages = [UIImage(named: "shirt"),
+                        UIImage(named: "watch"),
+                        UIImage(named: "bags"),
+                        UIImage(named: "duffleBags"),
+                        UIImage(named: "coats"),
+                        UIImage(named: "homeAndCamp")
+    ]
     var timer = Timer()
     var counter = 0
     override func viewDidLoad() {
@@ -47,6 +54,8 @@ class MainViewController: UIViewController {
     func setupCollectionView () {
         let nibSildeImageCell = UINib(nibName: "ImageCollectionViewCell", bundle: nil)
         slideHomeCollectionView.register(nibSildeImageCell, forCellWithReuseIdentifier: "sildeImageCell")
+        let nibProductCell = UINib(nibName: "ProductCollectionViewCell", bundle: nil)
+        itemCollectioView.register(nibProductCell, forCellWithReuseIdentifier: "productCell")
     }
     
     func setupPageView() {
@@ -86,7 +95,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if collectionView == slideHomeCollectionView {
             return sildeImages.count
         }
-        return 0
+        return productImages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -94,6 +103,10 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let slideImageCell = collectionView.dequeueReusableCell(withReuseIdentifier: "sildeImageCell", for: indexPath) as! ImageCollectionViewCell
             slideImageCell.slideImageView.image = sildeImages[indexPath.row]
             return slideImageCell
+        } else if collectionView == itemCollectioView {
+            let productImageCell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath) as! ProductCollectionViewCell
+            productImageCell.productImageView.image = productImages[indexPath.row]
+            return productImageCell
         }
         return UICollectionViewCell()
     }
@@ -110,8 +123,10 @@ extension MainViewController:  UICollectionViewDelegateFlowLayout {
         if collectionView == slideHomeCollectionView {
             return CGSize(width: collectionView.frame.size.width , height: collectionView.frame.size.height)
         }
-        return CGSize(width: 0, height: 0)
+        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
+        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
+        let size:CGFloat = (collectionView.frame.size.width - space) / 2.0
+        return CGSize(width: size, height: size)
     }
-    
     
 }

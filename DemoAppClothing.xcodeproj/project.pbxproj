@@ -15,6 +15,10 @@
 		18695726264ABB820059763A /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18695722264ABB820059763A /* ImageCollectionViewCell.xib */; };
 		18695727264ABB820059763A /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18695723264ABB820059763A /* ImageCollectionViewCell.swift */; };
 		18695728264ABB820059763A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18695724264ABB820059763A /* MainViewController.xib */; };
+		E6A67A0B264B7843002041EB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6A67A0A264B7598002041EB /* Montserrat-Bold.ttf */; };
+		E6A67A0F264B90E0002041EB /* futura light bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6A67A0E264B90E0002041EB /* futura light bt.ttf */; };
+		E6A67A14264BB294002041EB /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A67A12264BB294002041EB /* ProductCollectionViewCell.swift */; };
+		E6A67A15264BB294002041EB /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6A67A13264BB294002041EB /* ProductCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		18695722264ABB820059763A /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		18695723264ABB820059763A /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		18695724264ABB820059763A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E6A67A0A264B7598002041EB /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		E6A67A0E264B90E0002041EB /* futura light bt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "futura light bt.ttf"; sourceTree = "<group>"; };
+		E6A67A12264BB294002041EB /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6A67A13264BB294002041EB /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,45 @@
 		18695708264AA6ED0059763A /* DemoAppClothing */ = {
 			isa = PBXGroup;
 			children = (
+				E6A67A10264BB210002041EB /* HomeScreen */,
 				18695709264AA6ED0059763A /* AppDelegate.swift */,
 				1869570B264AA6ED0059763A /* SceneDelegate.swift */,
 				18695712264AA6EE0059763A /* Assets.xcassets */,
 				18695714264AA6EE0059763A /* LaunchScreen.storyboard */,
 				18695717264AA6EE0059763A /* Info.plist */,
-				18695723264ABB820059763A /* ImageCollectionViewCell.swift */,
-				18695722264ABB820059763A /* ImageCollectionViewCell.xib */,
+				E6A67A09264B7587002041EB /* fonts */,
+			);
+			path = DemoAppClothing;
+			sourceTree = "<group>";
+		};
+		E6A67A09264B7587002041EB /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E6A67A0A264B7598002041EB /* Montserrat-Bold.ttf */,
+				E6A67A0E264B90E0002041EB /* futura light bt.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		E6A67A10264BB210002041EB /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E6A67A11264BB229002041EB /* Cells */,
 				18695721264ABB810059763A /* MainViewController.swift */,
 				18695724264ABB820059763A /* MainViewController.xib */,
 			);
-			path = DemoAppClothing;
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		E6A67A11264BB229002041EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18695723264ABB820059763A /* ImageCollectionViewCell.swift */,
+				18695722264ABB820059763A /* ImageCollectionViewCell.xib */,
+				E6A67A12264BB294002041EB /* ProductCollectionViewCell.swift */,
+				E6A67A13264BB294002041EB /* ProductCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A67A0F264B90E0002041EB /* futura light bt.ttf in Resources */,
+				E6A67A0B264B7843002041EB /* Montserrat-Bold.ttf in Resources */,
 				18695716264AA6EE0059763A /* LaunchScreen.storyboard in Resources */,
+				E6A67A15264BB294002041EB /* ProductCollectionViewCell.xib in Resources */,
 				18695726264ABB820059763A /* ImageCollectionViewCell.xib in Resources */,
 				18695713264AA6EE0059763A /* Assets.xcassets in Resources */,
 				18695728264ABB820059763A /* MainViewController.xib in Resources */,
@@ -146,6 +185,7 @@
 			files = (
 				18695725264ABB820059763A /* MainViewController.swift in Sources */,
 				1869570A264AA6ED0059763A /* AppDelegate.swift in Sources */,
+				E6A67A14264BB294002041EB /* ProductCollectionViewCell.swift in Sources */,
 				18695727264ABB820059763A /* ImageCollectionViewCell.swift in Sources */,
 				1869570C264AA6ED0059763A /* SceneDelegate.swift in Sources */,
 			);

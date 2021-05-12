@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="futura light bt.ttf">
+            <string>FuturaBT-Light</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="DemoAppClothing" customModuleProvider="target">
             <connections>
@@ -41,7 +46,7 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UyV-yI-yp2">
                     <rect key="frame" x="0.0" y="332" width="414" height="564"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xjy-hJ-3QJ">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Xjy-hJ-3QJ">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -52,6 +57,12 @@
                         <outlet property="delegate" destination="-1" id="LzM-O0-q2e"/>
                     </connections>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKCAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4u6-K6-N48">
+                    <rect key="frame" x="106.5" y="232" width="201.5" height="52"/>
+                    <fontDescription key="fontDescription" name="FuturaBT-Light" family="Futura" pointSize="43"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,6 +75,8 @@
                 <constraint firstItem="vYc-Ns-gEa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JGo-42-UpR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EN4-9J-CTp" secondAttribute="trailing" constant="20" id="OYO-TY-aIc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vYc-Ns-gEa" secondAttribute="trailing" id="Pk8-m2-xkt"/>
+                <constraint firstItem="EN4-9J-CTp" firstAttribute="top" secondItem="4u6-K6-N48" secondAttribute="bottom" constant="20" id="RHA-Zj-OKA"/>
+                <constraint firstItem="4u6-K6-N48" firstAttribute="centerX" secondItem="vYc-Ns-gEa" secondAttribute="centerX" id="T9A-ri-uKA"/>
                 <constraint firstItem="UyV-yI-yp2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gxl-Yi-kwj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UyV-yI-yp2" secondAttribute="trailing" id="hv8-gf-T2h"/>
                 <constraint firstAttribute="bottom" secondItem="UyV-yI-yp2" secondAttribute="bottom" id="tO5-aR-91v"/>
